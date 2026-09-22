@@ -27,10 +27,10 @@ FROM eclipse-temurin:25-jre
 WORKDIR /app
 
 # Copy generated JAR
-COPY --from=builder /app/target/*.jar app.jar
+COPY --from=builder /app/target/*.jar /app/app.jar
 
 # Render provides PORT dynamically
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "/app/app.jar"]
 
