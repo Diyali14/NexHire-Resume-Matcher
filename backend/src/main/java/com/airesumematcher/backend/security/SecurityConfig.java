@@ -124,7 +124,8 @@ public class SecurityConfig {
                         "http://localhost:5508",
                         "http://localhost:5509",
                         "http://localhost:5510",
-                        "https://nex-hire-11i2.vercel.app"));
+                        "https://nex-hire-11i2.vercel.app",
+			"https://nex-hire-frontend.vercel.app"));
 
         configuration.setAllowedMethods(
                 List.of(
