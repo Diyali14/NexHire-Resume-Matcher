@@ -8,3 +8,4 @@ python-dotenv>=1.0
 requests>=2.31 
 python-multipart
 # Optional transformer embeddings: sentence-transformers>=3.0
+dotenv

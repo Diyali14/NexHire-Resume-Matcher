@@ -732,7 +732,7 @@ def extract_jd_skills_with_lm_studio(text: str) -> dict[str, Any]:
         "Extract structured hiring requirements from the job description below. "
         "Return ONLY one valid JSON object matching the schema. Rules:\n"
         "- jobTitle: the role being hired for (e.g. 'Backend Developer').\n"
-        "- experienceRequired: total years expected (e.g. '3+ years'), empty string if not stated.\n"
+        "- experienceRequired: total years expected (e.g. '3+ years') but take 0(lower limit) if given 0-3, empty string if not stated.\n"
         "- educationRequired: minimum degree/field if mentioned, empty string if not stated.\n"
         "- skills: every distinct skill, technology, tool, or competency mentioned.\n"
         "  - importance: HIGH if the JD says required/must/mandatory, "
