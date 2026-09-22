@@ -32,3 +32,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+ml/.env
+
+
+**/__pycache__
